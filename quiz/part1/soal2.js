@@ -13,13 +13,42 @@ function dataHandling2(input) {
 function dataHandling3(arr){
     let bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
     let mei = arr[3].slice(3,5);
-    let parsInt = parseInt(mei);
-    console.log(bulan[parsInt-1]);
+    console.log(bulan[mei-1]);
+    console.log("=========================================");
+    console.log();
+}
+
+function dataHandling4(arr){
+    let tanggal = arr[3].slice(0,2);
+    let bulan = arr[3].slice(3,5);
+    let tahun  = arr[3].slice(6,10);
+    console.log([tahun, tanggal, bulan]);
+    console.log("=========================================");
+    console.log();
+}
+
+function dataHandling5(arr){
+    let tanggal = arr[3].slice(0,2);
+    let bulan = arr[3].slice(3,5);
+    let tahun  = arr[3].slice(6,10);
+
+    let gabung = [tanggal,bulan, tahun];
+    console.log(gabung.join("-"));
+    console.log("=========================================");
+    console.log();
+}
+
+function dataHandling6(arr){
+    let nama = arr[1].slice(0,14);
+    console.log(nama);
 }
 // console.log(input);
 
 dataHandling2(input);
 dataHandling3(input);
+dataHandling4(input);
+dataHandling5(input);
+dataHandling6(input);
 
 /**
  * keluaran yang diharapkan (pada console)
