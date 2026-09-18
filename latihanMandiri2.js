@@ -3,8 +3,6 @@ let angka = [1,2,3,4,5];
 
 let pangkat = angka.map(function(num) {return num * num});
 console.log(pangkat);
-console.log();
-console.log("=====================================");
 
 console.log("Soal 2");
 let nama = ["Andi", "Bo", "Cici", "Do", "Eka"];
